@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #111;
+    color: #fff;
+    
+}
+
+.navbar {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 40px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 1000px;
+    height: 80px; 
+    overflow: hidden; 
+}
+
+.logo img {
+    height: 80px;
+    max-height: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.nav-item i {
+    margin-right: 8px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.nav-item:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #8a8e97;
+    text-align: center;
+    
+}
+
+.main-text h2 i {
+    margin-right: 10px;
+    color: #8a8e97;
+    position: relative;
+
+}
+
+.main-text .content h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.main-text .content h1 span {
+    background: linear-gradient(to right, #12B3CF 0%, #25CF22 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mouse-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+lottie-player {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    
+}
+
+
